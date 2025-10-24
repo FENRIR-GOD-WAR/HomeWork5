@@ -34,7 +34,7 @@ class FreelancerServiceTest {
         Assertions.assertEquals(expected, actual);
     }
     @ParameterizedTest
-    @CsvFileSource(files = "C:\\Users\\artem\\Desktop\\Учеба проекты\\Java пункт\\HomeWork5\\src\\test\\resources\\ru\\netology\\services\\test_data.csv")
+    @CsvFileSource(files = "C:\\Users\\artem\\Desktop\\Home Work netology\\Java Home\\HomeWork5\\src\\test\\resources\\ru\\netology\\services\\test_data.csv")
     public void testFreelancerWithParams(int income, int expenses, int threshold, int expected) {
         FreelancerService service = new FreelancerService();
         int actual = service.calculate(income, expenses, threshold);
